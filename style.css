@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "roboto", sans-serif;
+
+    background-image: url(https://images.unsplash.com/photo-1714779573233-fc52523054a4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.container {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form input, #form textarea, #form select {
+    font-size: 1.2rem;
+
+    padding: 10px 0px 10px 0;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+form select {
+    font-size: 1.2rem;
+
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: rgb(61, 61, 202);
+    color: white;
+}
+
+#btn:hover {
+    background-color: green;
+}
+
+/* Classe utilitaire */
+.border_error {
+    border: 3px solid red;
+}
+
+/* On cache le message d'erreur */
+.error {
+    display: none; 
+    font-style: italic;
+    background-color: #900217;
+    padding: 10px 0px;
+}
+/* Erreur ou validate */
+input.valid, textarea.valid, select.valid {
+    border: 3px solid green;
+}
+
+input.invalid, textarea.invalid, select.invalid {
+    border: 3px solid red;
+}
